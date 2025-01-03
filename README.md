@@ -43,17 +43,17 @@ Correções sobre a máscara realizadas no documento original com base na própr
 
 | Nome | Tipo | Obrigatório | Tamanho | Máscara | Regra de Preenchimento |
 |------|------|-------------|---------|---------|-------------------------|
-| Tipo de CCEAL/CBR * | Numérico | Sim | 1 | Não se aplica | Para CCEAL: aceitar somente os valores de 1 a 4.Firme; Flexível por percentual de consumo; Flexível por percentual de geração; Flexível por prioridade. Para CBR: aceitar somente os valores de 1 a 7. Chamada Pública; Desverticalização; Mercado Próprio; Supridas e Supridoras; Ant.Lei nº 10.848/2004; Sistema Isolado; Outros CBR; Art. 5º Lei nº 13.182/2015; Art. 10º Lei nº 13.182/2015. Somente para contrato CBR. |
+| Tipo de CCEAL/CBR * | Numérico | Sim | 1 | Não se aplica | Para CCEAL: aceitar somente os valores de `1` a `4`. Firme; Flexível por percentual de consumo; Flexível por percentual de geração; Flexível por prioridade. Para CBR: aceitar somente os valores de `1` a `7`. Chamada Pública; Desverticalização; Mercado Próprio; Supridas e Supridoras; Ant.Lei nº 10.848/2004; Sistema Isolado; Outros CBR; Art. 5º Lei nº 13.182/2015; Art. 10º Lei nº 13.182/2015. Somente para contrato CBR. |
 | Tipo de Gravação* | Texto | Sim | 1 | `"R"` ou `"C"` | Aceitar somente os valores - Tipos: "R" – Rascunho, "C" – Concluído |
-| Data de Início* | Data | Sim | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a "01/01/2000 00". |
-| Data de Fim* | Data | Sim | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a "01/01/2000 00". |
-| ID do Comprador* | Numérico | Sim | 5 | Não se aplica | Aceitar somente valores maiores que 0. |
-| ID do Vendedor* | Numérico | Sim | 5 | Não se aplica | Aceitar somente valores maiores que 0. |
-| ID do Submercado de entrega* | Numérico | Sim | 1 | Não se aplica | Aceitar somente os valores de 1 a 4.1 Sudeste2 Sul3 Nordeste4 Norte" |
+| Data de Início* | Data | Sim | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a `01/01/2000 00`. |
+| Data de Fim* | Data | Sim | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a `01/01/2000 00`. |
+| ID do Comprador* | Numérico | Sim | 5 | Não se aplica | Aceitar somente valores maiores que `0`. |
+| ID do Vendedor* | Numérico | Sim | 5 | Não se aplica | Aceitar somente valores maiores que `0`. |
+| ID do Submercado de entrega* | Numérico | Sim | 1 | Não se aplica | Aceitar somente os valores de `1` a `4`. `1` - Sudeste; `2` - Sul; `3` - Nordeste e; `4` - Norte |
 | Referência | Texto | Não | 30 | Não se aplica | Tamanho Max. 30 caracteres. |
-| Direito ao Alívio de Exposição | Numérico | Não | 1 | `0` ou `1` | Aceitar somente os valores "0" – Autoprodução e "1" – Direitos EspeciaisSomente para contrato CCEAL. |
-| ID do Submercado de Origem* | Numérico | Sim para contratos de Direitos Especiais | 1 | Não se aplica | Aceitar somente os valores de 1 a 4.1 Sudeste; 2 Sul; 3 Nordeste; 4 Norte. Somente para contrato CCEAL. |
-| Particularidade para Verificação de Lastro | Texto | Não | 1 | `"G"`, `"E"` ou `"D"` | Aceitar somente os valoresG - Geração Própria; E – Exportação; D - Lastro de Venda para CCEAR D. Somente para contrato CCEAL. |
+| Direito ao Alívio de Exposição | Numérico | Não | 1 | `0` ou `1` | Aceitar somente os valores `0` – Autoprodução e `1` – Direitos EspeciaisSomente para contrato CCEAL. |
+| ID do Submercado de Origem* | Numérico | Sim para contratos de Direitos Especiais | 1 | Não se aplica | Aceitar somente os valores de `1` a `4`. `1` - Sudeste; `2` - Sul; `3` - Nordeste e; `4` - Norte. Somente para contrato CCEAL. |
+| Particularidade para Verificação de Lastro | Texto | Não | 1 | `"G"`, `"E"` ou `"D"` | Aceitar somente os valores `G` - Geração Própria; `E` – Exportação; `D` - Lastro de Venda para CCEAR D. Somente para contrato CCEAL. |
 | Observação | Texto | Não | 255 | Não se aplica | Tamanho Max. 255 caracteres |
 
 #### Criar contrato CCEAL – Cessão
@@ -61,51 +61,51 @@ Correções sobre a máscara realizadas no documento original com base na própr
 | Nome | Tipo | Obrigatório | Tamanho | Máscara | Regra de Preenchimento |
 |------|------|-------------|---------|---------|-------------------------|
 | Contrato de Cessão | Texto | Não | 1 | `"X"` ou `""` |  |
-| Número do Contrato Origem | Numérico | Não | 10 | Não se aplica | Aceitar somente valores maiores que 0. |
+| Número do Contrato Origem | Numérico | Não | 10 | Não se aplica | Aceitar somente valores maiores que `0`. |
 
 #### Criar e editar contrato CCEAL e CBR - Montante Médio
 
 | Nome | Tipo | Obrigatório | Tamanho | Máscara | Regra de Preenchimento |
 |------|------|-------------|---------|---------|-------------------------|
-| Data de Início do Montante Médio* (`DD/MM/AAAA HH`) | Data | Sim | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a "01/01/2000 00:00". Preencher somente até a parcela hora. |
-| Data de Fim do Montante Médio* (`DD/MM/AAAA HH`) | Data | Sim | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a "01/01/2000 00:00. Preencher somente até a parcela hora. |
-| Montante MWmédio* 🩹 | Numérico | Sim | 28,6 | `9999999999999999999999999999,999999`| Aceitar somente valores maiores ou igual que 0. |
+| Data de Início do Montante Médio* 🩹 | Data | Sim | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a `01/01/2000 00`. Preencher somente até a parcela hora. |
+| Data de Fim do Montante Médio* 🩹 | Data | Sim | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a `01/01/2000 00`. Preencher somente até a parcela hora. |
+| Montante MWmédio* 🩹 | Numérico | Sim | 28,6 | Não se aplica | Aceitar somente valores maiores ou igual que `0`. |
 | Validar Montante Médio | Numérico | Não | 1 | `"X"` ou `""` |  |
 | Editar contrato CCEAL e CBR - Dados Horários por Patamar |
-| Semana* | Numérico | Sim | 1 | Não se aplica | Aceitar somente valores maior ou igual a 1. Preencher com o número da semana. Ex:1 para a semana110 para a semana10 |
+| Semana* | Numérico | Sim | 1 | Não se aplica | Aceitar somente valores maior ou igual a `1`. Preencher com o número da semana. Ex: `1` para a semana1 e `10` para a semana10 |
 
 #### Editar contrato CCEAL e CBR - Dados Horários por Hora
 
 | Nome | Tipo | Obrigatório | Tamanho | Máscara | Regra de Preenchimento |
 |------|------|-------------|---------|---------|-------------------------|
-| Mês/Ano* | Numérico | Sim | 7 | `MM/AAAA` | Aceitar somente valores entre 1 e 12 e ano maior que 2000.Preencher com mês e ano. Ex:01/2014 |
-| Dia* | Numérico | Sim | 2 | `DD` | Aceitar somente valores entre 1 e 31. Inserir somente uma vez, em caso de mais de 1 dia. Ex:Dia Hora01 00010202 0001 |
-| Hora Início* | Numérico | Sim | 2 | `HH` | Aceitar somente valores entre 00 e 23, e 23*. Utilizar as horas da seguinte forma:00010203...23_________________________Usar 23* para a hora adicional do dia de término do horário de verão |
-| MWh* | Numérico | Sim | 28,6 | `9999999999999999999999999999,999999` | Aceitar somente valores maiores ou iguais que 0,000000. |
+| Mês/Ano* | Numérico | Sim | 7 | `MM/AAAA` | Aceitar somente valores entre 1 e 12 e ano maior que 2000.Preencher com mês e ano. Ex: 01/2014 |
+| Dia* | Numérico | Sim | 2 | `DD` | Aceitar somente valores entre 1 e 31. Inserir somente uma vez, em caso de mais de 1 dia. Ex: Dia Hora 01 00010202 0001 |
+| Hora Início* | Numérico | Sim | 2 | `HH` | Aceitar somente valores entre `00`e `23`, ou `23*`. Utilizar as horas da seguinte forma: `00`, `01`, `02`, `03`, ... `23`. Usar `23*` para a hora adicional do dia de término do horário de verão |
+| MWh* | Numérico | Sim | 28,6 | Não se aplica | Aceitar somente valores maiores ou iguais que `0,000000`. |
 
 #### Editar contrato CCEAL e CBR - Dados Horários Por Patamar
 
 | Nome | Tipo | Obrigatório | Tamanho | Máscara | Regra de Preenchimento |
 |------|------|-------------|---------|---------|-------------------------|
-| Unidade do Patamar* | Numérico | Sim | 1 | `0` ou `1` | Aceitar somente os valores0 MWh; 1 MWmédio. |
-| Leve (MWh ou MWmédio) | Numérico | Não | 6 casas decimais (MWmédio) e 3 casas decimais (MWh) | `9999999999999999999999999999,999999` ou `9999999999999999999999999999,999` | Aceitar somente valores maiores ou igual que 0. Preencher com 3 casas decimais para o tipo Patamar 0 – MWh; Preencher com 6 casas decimais para o tipo 1 – Mwmédio. |
-| Médio (MWh ou MWmédio) | Numérico | Não | 6 casas decimais (MWmédio) e 3 casas decimais (MWh) | `9999999999999999999999999999,999999` ou `9999999999999999999999999999,999` | Aceitar somente valores maiores ou igual que 0. Preencher com 3 casas decimais para o tipo Patamar 0 – MWh; Preencher com 6 casas decimais para o tipo 1 – MWmédio. |
-| Pesado (MWh ou MWmédio) | Numérico | Não | 6 casas decimais (MWmédio) e 3 casas decimais (MWh) | `9999999999999999999999999999,999999` ou `9999999999999999999999999999,999` | Aceitar somente valores maiores ou igual que 0. Preencher com 3 casas decimais para o tipo Patamar 0 – MWh; Preencher com 6 casas decimais para o tipo 1 – Mwmédio. |
+| Unidade do Patamar* | Numérico | Sim | 1 | `0` ou `1` | Aceitar somente os valores `0` MWh ou `1` MWmédio. |
+| Leve (MWh ou MWmédio) | Numérico | Não | 28,6 ou 28,3 | Não se aplica | Aceitar somente valores maiores ou igual que `0`. Preencher com 3 casas decimais para o tipo Patamar `0` – MWh; Preencher com 6 casas decimais para o tipo `1` – Mwmédio. |
+| Médio (MWh ou MWmédio) | Numérico | Não | 28,6 ou 28,3 | Não se aplica | Aceitar somente valores maiores ou igual que `0`. Preencher com 3 casas decimais para o tipo Patamar `0` – MWh; Preencher com 6 casas decimais para o tipo `1` – MWmédio. |
+| Pesado (MWh ou MWmédio) | Numérico | Não | 28,6 ou 28,3 | Não se aplica | Aceitar somente valores maiores ou igual que `0`. Preencher com 3 casas decimais para o tipo Patamar `0` – MWh; Preencher com 6 casas decimais para o tipo `1` – MWmédio. |
 
 #### Criar e editar contrato CCEAL e CBR – Modulação
 
 | Nome | Tipo | Obrigatório | Tamanho | Máscara | Regra de Preenchimento |
 |------|------|-------------|---------|---------|-------------------------|
-| Tipo Modulação | Texto | Não | 1 | Para CCEAL Firme: `"F"`, `"G"`, `"C"` ou `"M"` | Aceita somente os valores listados abaixo:F – Flat; G – Geração; C – Carga; M – MRE. |
-| Montante Mínimo (MWh) | Numérico | Não | 28,3 | `9999999999999999999999999999,999` |  |
-| Montante Máximo (MWh) | Numérico | Não | 28,3 | `9999999999999999999999999999,999` |  |
+| Tipo Modulação | Texto | Não | 1 | `"F"`, `"G"`, `"C"` ou `"M"` | Para CCEAL Firme: Aceita somente os valores listados abaixo: `F` – Flat; `G` – Geração; `C` – Carga ou; `M` – MRE. |
+| Montante Mínimo (MWh) | Numérico | Não | 28,3 | Não se aplica |  |
+| Montante Máximo (MWh) | Numérico | Não | 28,3 | Não se aplica |  |
 
 #### Criar e editar contrato CCEAL e CBR - Ativo
 
 | Nome | Tipo | Obrigatório | Tamanho | Máscara | Regra de Preenchimento |
 |------|------|-------------|---------|---------|-------------------------|
-| ID da Parcela do Ativo Para Modulação | Numérico | Não | 9 | Não se aplica | Aceitar somente valores maiores que 0. Obrigatório caso o tipo da Modulação for 'C-Carga' ou 'G-Geração'' |
-| ID da Parcela do Ativo Para Lastro | Numérico | Não | 9 | Não se aplica | Aceitar somente valores maiores que 0. Somente para contrato CBR. |
+| ID da Parcela do Ativo Para Modulação | Numérico | Não | 9 | Não se aplica | Aceitar somente valores maiores que `0`. Obrigatório caso o tipo da Modulação for `C` - Carga ou `G` - Geração |
+| ID da Parcela do Ativo Para Lastro | Numérico | Não | 9 | Não se aplica | Aceitar somente valores maiores que `0`. Somente para contrato CBR. |
 | Editar contrato CBR – Ativo |
 | Excluir ativo para modulação | Texto | Não | 1 | `"X"` ou `""` | Somente para contrato CBR. |
 | Excluir ativo para lastro | Texto | Não | 1 | `"X"`ou `""` | Somente para contrato CBR. |
@@ -114,8 +114,8 @@ Correções sobre a máscara realizadas no documento original com base na própr
 
 | Nome | Tipo | Obrigatório | Tamanho | Máscara | Regra de Preenchimento |
 |------|------|-------------|---------|---------|-------------------------|
-| Número do Contrato* | Numérico | Sim | 10 | Não se aplica | Aceitar somente valores maiores que 0Inserir somente uma vez. |
-| Data Finalização Contrato (`DD/MM/AAAA HH`) | Data | Não | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a "01/01/2000 00". Preencher somente até a parcela hora.Não deverá ser preenchido caso o campo "Cancelar Contrato" ou "Validar Cancelamento" for informado. |
+| Número do Contrato* | Numérico | Sim | 10 | Não se aplica | Aceitar somente valores maiores que `0`Inserir somente uma vez. |
+| Data Finalização Contrato (`DD/MM/AAAA HH`) | Data | Não | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a `01/01/2000 00`. Preencher somente até a parcela hora.Não deverá ser preenchido caso o campo "Cancelar Contrato" ou "Validar Cancelamento" for informado. |
 | Validar Finalização | Texto | Não | 1 | `"X"`ou `""` | Não deve ser preenchido caso o campo "Cancelar Contrato" for informado. |
 | Cancelar Contrato | Texto | Não | 1 | `"X"`ou `""` | Não deve ser preenchido caso o campo "Data Finalização Contrato" ou "Validar Finalização" for informado. |
 | Validar Cancelamento | Texto | Não | 1 | `"X"`ou `""` | Não deve ser preenchido caso o campo "Data Finalização Contrato" ou "Validar Finalização" for informado. |
@@ -124,44 +124,44 @@ Correções sobre a máscara realizadas no documento original com base na própr
 
 | Nome | Tipo | Obrigatório | Tamanho | Máscara | Regra de Preenchimento |
 |------|------|-------------|---------|---------|-------------------------|
-| Número do Contrato* | Numérico | Sim | 10 | Não se aplica | Aceitar somente valores maiores que 0. Inserir somente uma vez. |
+| Número do Contrato* | Numérico | Sim | 10 | Não se aplica | Aceitar somente valores maiores que `0`. Inserir somente uma vez. |
 | Montantes MWmédio |
-| Início Vigência do Montante Médio (`DD/MM/AAAA HH`) | Data | Não | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a "01/01/2000 00:00". Preencher somente até a parcela hora. Inserir somente uma vez em caso de mais de um período. |
+| Início Vigência do Montante Médio (`DD/MM/AAAA HH`) | Data | Não | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a `01/01/2000 00`. Preencher somente até a parcela hora. Inserir somente uma vez em caso de mais de um período. |
 | Validar Montante Médio | Campo Texto | Não | 1 | `"X"`ou `""` | Obrigatório se o campo "Início Vigência do Montante Médio" for informado. |
 
 ### Contrato CCEAR-Q, Leilão de Ajuste e Proinfa
 
 | Nome | Tipo | Obrigatório | Tamanho | Máscara | Regra de Preenchimento |
 |------|------|-------------|---------|---------|-------------------------|
- Número do Contrato* | Numérico | Sim | 10 | Não se aplica | Aceitar somente valores maiores que 0Inserir somente uma vez. |
-| Data Início Vigência * | Data | Sim | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a "01/01/2000 00". |
-| Ano* | Numérico | Sim | 4 | `AAAA` | Aceitar somente valores maiores ou iguais a 2000. Inserir somente uma vez, em caso de mais de 1 ano. |
-| Mês* | Numérico | Sim | 2 | `MM` | Aceitar somente valores entre 1 e 12. |
-| Montante Mensal* (MWh) | Numérico | Sim | 28,3 | `9999999999999999999999999999,999` | Aceitar somente valores maiores ou iguais a 0,000. |
+ Número do Contrato* | Numérico | Sim | 10 | Não se aplica | Aceitar somente valores maiores que `0`Inserir somente uma vez. |
+| Data Início Vigência * | Data | Sim | 13 | `DD/MM/AAAA HH` | Aceitar somente valores maiores ou iguais a `01/01/2000 00`. |
+| Ano* | Numérico | Sim | 4 | `AAAA` | Aceitar somente valores maiores ou iguais a `2000`. Inserir somente uma vez, em caso de mais de 1 ano. |
+| Mês* | Numérico | Sim | 2 | `MM` | Aceitar somente valores entre `01` e `12`. |
+| Montante Mensal* (MWh) | Numérico | Sim | 28,3 | Não se aplica | Aceitar somente valores maiores ou iguais a 0,000. |
 | Validar Sazonalização | Texto | Não | 1 | `"X"`ou `""` |  |
 | Validar Modulação | Texto | Não | 1 | `"X"`ou `""` | Somente para contrato Leilão de Ajuste. |
-| Dia | Numérico | Não | 2 | `DD` | Aceitar somente valores entre 1 e 31. Somente para contrato Leilão de Ajuste. |
-| Hora | Numérico | Não | 2 | `HH` | Aceitar somente valores entre 1 e 23, e 23*. Somente para contrato Leilão de Ajuste. |
-| Dados Horários MWh 🩹 | Numérico | Não | 28,6 | `9999999999999999999999999999,999999` | Aceitar somente valores maiores ou iguais a 0,000000. Somente para contrato Leilão de Ajuste. |
-| Semana | Campo Texto Numérico | Não | 1 | Não se aplica | Aceitar somente valores entre 1 e 6. Somente para contrato Leilão de Ajuste. |
-| Unidade do Patamar | Numérico | Não | 1 | Não se aplica | Aceita somente os valores listados abaixo:0 – MWh; 1 – Mwmédio. Somente para contrato Leilão de Ajuste. |
-| Leve (MWh/ MWmédio) | Numérico | Não | 6 casas decimais (MWmédio) e 3 casas decimais (MWh) | `9999999999999999999999999999,999999` ou `9999999999999999999999999999,999` | Aceitar somente valores maiores ou igual que 0. Preencher com 3 casas decimais para o tipo Patamar 0 – MWh; Preencher com 6 casas decimais para o tipo 1 – MWmédio. Somente para contrato Leilão de Ajuste. |
-| Médio (MWh/ MWmédio) | Numérico | Não | 6 casas decimais (MWmédio) e 3 casas decimais (MWh) | `9999999999999999999999999999,999999` ou `9999999999999999999999999999,999` | Aceitar somente valores maiores ou igual que 0.Preencher com 3 casas decimais para o tipo Patamar 0 – MWh; Preencher com 6 casas decimais para o tipo 1 – MWmédio. Somente para contrato Leilão de Ajuste. |
-| Pesado (MWh/ MWmédio) | Numérico | Não | 6 casas decimais (MWmédio) e 3 casas decimais (MWh) | `9999999999999999999999999999,999999` ou `9999999999999999999999999999,999` | Aceitar somente valores maiores ou igual que 0. Preencher com 3 casas decimais para o tipo Patamar 0 – MWh; Preencher com 6 casas decimais para o tipo 1 – MWmédio. Somente para contrato Leilão de Ajuste. |
+| Dia | Numérico | Não | 2 | `DD` | Aceitar somente valores entre `01` e `31`. Somente para contrato Leilão de Ajuste. |
+| Hora | Numérico | Não | 2 | `HH` | Aceitar somente valores entre `01` e `23`, ou `23*`. Somente para contrato Leilão de Ajuste. |
+| Dados Horários MWh 🩹 | Numérico | Não | 28,6 | Não se aplica | Aceitar somente valores maiores ou iguais a `0,000000`. Somente para contrato Leilão de Ajuste. |
+| Semana | Campo Texto Numérico | Não | 1 | Não se aplica | Aceitar somente valores entre `1` e `6`. Somente para contrato Leilão de Ajuste. |
+| Unidade do Patamar | Numérico | Não | 1 | Não se aplica | Aceita somente os valores listados abaixo: `0` – MWh ou `1` – MWmédio. Somente para contrato Leilão de Ajuste. |
+| Leve (MWh/ MWmédio) | Numérico | Não | 28,6 ou 28,3 | Não se aplica | Aceitar somente valores maiores ou igual que `0`. Preencher com 3 casas decimais para o tipo Patamar `0` – MWh; Preencher com 6 casas decimais para o tipo `1` – MWmédio. Somente para contrato Leilão de Ajuste. |
+| Médio (MWh/ MWmédio) | Numérico | Não | 28,6 ou 28,3 | Não se aplica | Aceitar somente valores maiores ou igual que `0`.Preencher com 3 casas decimais para o tipo Patamar `0` – MWh; Preencher com 6 casas decimais para o tipo `1` – MWmédio. Somente para contrato Leilão de Ajuste. |
+| Pesado (MWh/ MWmédio) | Numérico | Não | 28,6 ou 28,3 | Não se aplica | Aceitar somente valores maiores ou igual que `0`. Preencher com 3 casas decimais para o tipo Patamar `0` – MWh; Preencher com 6 casas decimais para o tipo `1` – MWmédio. Somente para contrato Leilão de Ajuste. |
 
 ### Contrato CCEAR-Q, CCEEAR-D Redução Contratual
 
 | Nome | Tipo | Obrigatório | Tamanho | Máscara | Regra de Preenchimento |
 |------|------|-------------|---------|---------|-------------------------|
-| Número do Contrato* | Numérico | Sim | 10 | Não se aplica | Aceitar somente valores maiores que 0Inserir somente uma vez. |
-| Tipo de Redução * | Texto | Sim | 1 | `"T"` ou `"P"` | Aceitar somente valores iguais à "T" (Temporário) ou "P" (Permanente) |
-| Início do Período de Redução* | Data | Sim | 7 | `MM/AAAA` | Para o AAAA - Aceitar somente valores maiores ou iguais a 2000.Para o MM – Aceitar somente valores entre 1 e 12 |
-| Fim do Período de Redução | Data | Não | 7 | `MM/AAAA` | Para o AAAA - Aceitar somente valores maiores ou iguais a 2000.Para o MM – Aceitar somente valores entre 1 e 12Somente se o tipo de redução for temporária "T" |
-| Fator de Redução* 🩹 | Numérico | Sim | 13,12 | `9999999999999,999999999999` | Para redução temporária - Aceitar somente valores maiores que zero (0) ou menor ou igual a um (1). Para redução permanente – Aceitar somente se o valor maior que zero (0) e menor que um (1) |
+| Número do Contrato* | Numérico | Sim | 10 | Não se aplica | Aceitar somente valores maiores que `0`Inserir somente uma vez. |
+| Tipo de Redução * | Texto | Sim | 1 | `"T"` ou `"P"` | Aceitar somente valores iguais à `T` (Temporário) ou `P` (Permanente) |
+| Início do Período de Redução* | Data | Sim | 7 | `MM/AAAA` | Para o `AAAA` - Aceitar somente valores maiores ou iguais a `2000`. Para o `MM` – Aceitar somente valores entre 1 e 12 |
+| Fim do Período de Redução | Data | Não | 7 | `MM/AAAA` | Para o `AAAA` - Aceitar somente valores maiores ou iguais a `2000`. Para o `MM` – Aceitar somente valores entre `01` e `12`. Somente se o tipo de redução for temporária `T` |
+| Fator de Redução* 🩹 | Numérico | Sim | 13,12 | Não se aplica | Para redução temporária - Aceitar somente valores maiores que `0` ou menor ou igual a `1`. Para redução permanente – Aceitar somente se o valor maior que `0` e menor que `1` |
 | Tipo da Validação* | Numérico | Sim | 1 | `0` ou `1` | Aceitar somente valores iguais à 0 (Redução) ou 1 (Rescisão) |
-| Início do Período da Rescisão | Data | Sim | 7 | `MM/AAAA` | Para o AAAA - Aceitar somente valores maiores ou iguais a 2000. Para o MM – Aceitar somente valores entre 1 e 12 |
-| Tipo Acordo* | Numérico | Sim | 1 | `0` ou `1` | Aceitar somente valores iguais à 0 (Redução) ou 1 (Rescisão) |
-| Início do Período da Redução/Rescisão | Data | Sim | 7 | `MM/AAAA` | Para o AAAA - Aceitar somente valores maiores ou iguais a 2000. Para o MM – Aceitar somente valores entre 1 e 12 |
+| Início do Período da Rescisão | Data | Sim | 7 | `MM/AAAA` | Para o `AAAA` - Aceitar somente valores maiores ou iguais a `2000`. Para o `MM` – Aceitar somente valores entre `01` e `12` |
+| Tipo Acordo* | Numérico | Sim | 1 | `0` ou `1` | Aceitar somente valores iguais à `0` (Redução) ou `1` (Rescisão) |
+| Início do Período da Redução/Rescisão | Data | Sim | 7 | `MM/AAAA` | Para o `AAAA` - Aceitar somente valores maiores ou iguais a `2000`. Para o `MM` – Aceitar somente valores entre `01` e `12` |
 
 ## Operações disponíveis
 
@@ -191,23 +191,23 @@ As operações disponíveis para contratos do tipo CCEAL Firme são:
 
 ```xml
 <ContratosCCEAL tipoGeracao="5" tipoCCEAL="1" sistemaOrigem="Contingencia">
-	<Contrato sequencialControle="1" tipoGravação="C" 
+    <Contrato sequencialControle="1" tipoGravação="C" 
         dataDeInicio="01/01/2011 00:00:00" dataDeFim="31/12/2020 23:00:00"
-        idComprador="1" idVendedor="2" 	idSubMerEntrega="1" referencia="10"
+        idComprador="1" idVendedor="2"     idSubMerEntrega="1" referencia="10"
         dirAlivExp="0" idSubMerOrigem="1" partVerLastro="E"
         observação="Anotar o montante e acompanhar" contratoCessao="X"
         idContratoCessao="123">
-		<MontanteMédio dataDeInicio="01/01/2000 00" dataDeFim="31/12/2000 23" 
+        <MontanteMédio dataDeInicio=`01/01/2000 00` dataDeFim="31/12/2000 23" 
             validarMontante="X">
-			<MontanteMédioContratoCCEALFirme montanteMedio="99999999999999999,999999" />
-				<MesAno mesAno="01/2000">
-					<Dia dia="01">
-						<Hora hora="00" montanteHorario="99999999999999999,999" />
-					</Dia>
-				</MesAno>
-				<AtivoAssociadoModulacao idAtivoAssociadoModulacao="" />
-			</MontanteMédio>
-	</Contrato>     
+            <MontanteMédioContratoCCEALFirme montanteMedio="99999999999999999,999999" />
+                <MesAno mesAno="01/2000">
+                    <Dia dia="01">
+                        <Hora hora="00" montanteHorario="99999999999999999,999" />
+                    </Dia>
+                </MesAno>
+                <AtivoAssociadoModulacao idAtivoAssociadoModulacao="" />
+            </MontanteMédio>
+    </Contrato>     
 </ContratosCCEAL>
 ```
 
@@ -215,17 +215,17 @@ As operações disponíveis para contratos do tipo CCEAL Firme são:
 
 ```xml
 <ContratosCCEAL tipoGeracao="13" tipoCCEAL="1">
-<Contrato sequencialControle="1" numeroContrato="123" tipoGravação="C">
-		<MontanteMédio vigenciaDeInicio="01/01/2000 00" vigenciaDeFim="31/12/2000 23">
-			<semana semana="1" validarMontante="X">
-				<MontanteMédioContratoCCEALFirme montanteMedio="99999999999999999,999999" />
-				<TipoModulacao tipoModulacao="F"/>
+    <Contrato sequencialControle="1" numeroContrato="123" tipoGravação="C">
+        <MontanteMédio vigenciaDeInicio=`01/01/2000 00` vigenciaDeFim="31/12/2000 23">
+            <semana semana="1" validarMontante="X">
+                <MontanteMédioContratoCCEALFirme montanteMedio="99999999999999999,999999" />
+                <TipoModulacao tipoModulacao="F"/>
                 <LimiteModulacao limiteMinimoModulacao="99999999999999999,999"
                     limiteMaximoModulacao="99999999999999999,999" />
-				<AtivoAssociadoModulacao idAtivoAssociadoModulacao="" />
-			</semana>
-		</MontanteMédio>
-	</Contrato>     
+                <AtivoAssociadoModulacao idAtivoAssociadoModulacao="" />
+            </semana>
+        </MontanteMédio>
+    </Contrato>     
 </ContratosCCEAL>
 ```
 
@@ -233,9 +233,9 @@ As operações disponíveis para contratos do tipo CCEAL Firme são:
 
 ```xml
 <ContratosCCEAL tipoGeracao="24">
-	<Contrato sequencialControle="1" numeroContrato="123">
-		<MontanteMédio vigenciaDeInicio="01/01/2000 00" validarMontante="X">
-	</Contrato>  
+    <Contrato sequencialControle="1" numeroContrato="123">
+        <MontanteMédio vigenciaDeInicio=`01/01/2000 00` validarMontante="X">
+    </Contrato>  
 </ContratosCCEAL>
 ```
 
@@ -275,21 +275,21 @@ As operações disponíveis para contratos do tipo CBR são:
 
 ```xml
 <ContratosCBR tipoGeracao="5">
-	<Contrato sequencialControle="1" tipoCBR="1" tipoGravação="C" 
+    <Contrato sequencialControle="1" tipoCBR="1" tipoGravação="C" 
         dataDeInicio="01/01/2011 00:00:00" dataDeFim="31/12/2020 23:00:00"
         idComprador="1" idVendedor="2" idSubMerEntrega="1" referencia="10"
         observação="Anotar o montante e acompanhar">
-		<AtivoAssociadoLastro idAtivoAssociadoLastro="1" />
-		<MontanteMédio dataDeInicio="01/01/2000 00" dataDeFim="31/12/2000 23" validarMontante="X">
-			<MontanteMédioContratoCBR montanteMedio="99999999999999999,999999" />
-				<MesAno mesAno="01/2000">
-					<Dia dia="01">
-						<Hora hora="00" montanteHorario="99999999999999999,999" />
-					</Dia>
-				</MesAno>
-				<AtivoAssociadoModulacao idAtivoAssociadoModulacao="" />
-			</MontanteMédio>
-	</Contrato>     
+        <AtivoAssociadoLastro idAtivoAssociadoLastro="1" />
+        <MontanteMédio dataDeInicio=`01/01/2000 00` dataDeFim="31/12/2000 23" validarMontante="X">
+            <MontanteMédioContratoCBR montanteMedio="99999999999999999,999999" />
+                <MesAno mesAno="01/2000">
+                    <Dia dia="01">
+                        <Hora hora="00" montanteHorario="99999999999999999,999" />
+                    </Dia>
+                </MesAno>
+                <AtivoAssociadoModulacao idAtivoAssociadoModulacao="" />
+            </MontanteMédio>
+    </Contrato>     
 </ContratosCBR>
 ```
 
@@ -299,18 +299,18 @@ As operações disponíveis para contratos do tipo CBR são:
 
 ```xml
 <ContratosCBR tipoGeracao="7">
-	<Contrato sequencialControle="1"  numeroContrato="123" tipoGravação="C">
-		<MontanteMédio vigenciaDeInicio="01/01/2000 00" vigenciaDeFim="31/12/2000 23">
-			<semana semana="1" validarMontante="X">
-				<MontanteMédioContratoCBR montanteMedio="99999999999999999,999999" />
-				<TipoModulacao tipoModulacao="F"/>
-				<LimiteModulacao limiteMinimoModulacao="99999999999999999,999"
+    <Contrato sequencialControle="1"  numeroContrato="123" tipoGravação="C">
+        <MontanteMédio vigenciaDeInicio=`01/01/2000 00` vigenciaDeFim="31/12/2000 23">
+            <Semana semana="1" validarMontante="X">
+                <MontanteMédioContratoCBR montanteMedio="99999999999999999,999999" />
+                <TipoModulacao tipoModulacao="F"/>
+                <LimiteModulacao limiteMinimoModulacao="99999999999999999,999"
                     limiteMaximoModulacao="99999999999999999,999" />
-				<AtivoAssociadoModulacao idAtivoAssociadoModulacao=""
+                <AtivoAssociadoModulacao idAtivoAssociadoModulacao=""
                     excluirAtivoAssociadoModulacao="" />
-			</semana>
-		</MontanteMédio>
-	</Contrato>     
+            </Semana>
+        </MontanteMédio>
+    </Contrato>     
 </ContratosCBR>
 ```
 
@@ -327,14 +327,14 @@ As operações disponíveis para contratos do tipo CBR são:
 
 ```xml
 <ContratosCBR tipoGeracao="14">
-	<Contrato sequencialControle="1" tipoGravacao="C" dataDeInicio="01/01/2018 00"
+    <Contrato sequencialControle="1" tipoGravacao="C" dataDeInicio="01/01/2018 00"
         dataDeFim="31/01/2018 23" idComprador="56" idVendedor="26" idSubMerEntrega="1">
-		<MontanteMaximoModulacao>
-		<MesAno mesAno="01/2018" montanteMaximoModulacao="2222.000000" validarMontante="X">
-			<AtivoAssociadoModulacao idAtivoAssociadoModulacao="1108" />
-		</MesAno>
-		</MontanteMaximoModulacao>
-	</Contrato>
+        <MontanteMaximoModulacao>
+        <MesAno mesAno="01/2018" montanteMaximoModulacao="2222.000000" validarMontante="X">
+            <AtivoAssociadoModulacao idAtivoAssociadoModulacao="1108" />
+        </MesAno>
+        </MontanteMaximoModulacao>
+    </Contrato>
 </ContratosCBR>
 ```
 
@@ -342,17 +342,17 @@ As operações disponíveis para contratos do tipo CBR são:
 
 ```xml
 <ContratosCBR tipoGeracao="15">
-	<Contrato sequencialControle="1" tipoGravacao="C" dataDeInicio="01/01/2018 00"
+    <Contrato sequencialControle="1" tipoGravacao="C" dataDeInicio="01/01/2018 00"
         dataDeFim="31/01/2018 23" idComprador="56" idVendedor="26" idSubMerEntrega="1">
-		<MontanteMaximoModulacao>
-		<MesAno mesAno="01/2018" validarMontante="X">
-			<Dia dia="01">
-				<Hora hora="00" montanteMaximoHorario="32323.000000" />
-			</Dia>
-				<AtivoAssociadoModulacao idAtivoAssociadoModulacao="1108" />
-		</MesAno>
-		</MontanteMaximoModulacao>
-	</Contrato>
+        <MontanteMaximoModulacao>
+        <MesAno mesAno="01/2018" validarMontante="X">
+            <Dia dia="01">
+                <Hora hora="00" montanteMaximoHorario="32323.000000" />
+            </Dia>
+                <AtivoAssociadoModulacao idAtivoAssociadoModulacao="1108" />
+        </MesAno>
+        </MontanteMaximoModulacao>
+    </Contrato>
 </ContratosCBR>
 ```
 
@@ -360,13 +360,13 @@ As operações disponíveis para contratos do tipo CBR são:
 
 ```xml
 <ContratosCBR tipoGeracao="16">
-	<Contrato sequencialControle="1" numeroContrato="2323" tipoGravacao="C">
-		<MontanteMaximoModulacao>
-		<MesAno mesAno="01/2018" montanteMaximoModulacao="2222.000000" validarMontante="X">
-			<AtivoAssociadoModulacao idAtivoAssociadoModulacao="1108" />
-		</MesAno>
-		</MontanteMaximoModulacao>
-	</Contrato>
+    <Contrato sequencialControle="1" numeroContrato="2323" tipoGravacao="C">
+        <MontanteMaximoModulacao>
+        <MesAno mesAno="01/2018" montanteMaximoModulacao="2222.000000" validarMontante="X">
+            <AtivoAssociadoModulacao idAtivoAssociadoModulacao="1108" />
+        </MesAno>
+        </MontanteMaximoModulacao>
+    </Contrato>
 </ContratosCBR>
 ```
 
@@ -374,16 +374,16 @@ As operações disponíveis para contratos do tipo CBR são:
 
 ```xml
 <ContratosCBR tipoGeracao="17">
-	<Contrato sequencialControle="1" numeroContrato="2323" tipoGravacao="C">
-		<MontanteMaximoModulacao>
-		<MesAno mesAno="01/2018" validarMontante="X">
-			<Dia dia="01">
-				<Hora hora="00" montanteMaximoHorario="32323.000000" />
-			</Dia>
-				<AtivoAssociadoModulacao idAtivoAssociadoModulacao="1108" />
-		</MesAno>
-		</MontanteMaximoModulacao>
-	</Contrato>
+    <Contrato sequencialControle="1" numeroContrato="2323" tipoGravacao="C">
+        <MontanteMaximoModulacao>
+        <MesAno mesAno="01/2018" validarMontante="X">
+            <Dia dia="01">
+                <Hora hora="00" montanteMaximoHorario="32323.000000" />
+            </Dia>
+                <AtivoAssociadoModulacao idAtivoAssociadoModulacao="1108" />
+        </MesAno>
+        </MontanteMaximoModulacao>
+    </Contrato>
 </ContratosCBR>
 ```
 
@@ -405,7 +405,7 @@ As operações disponíveis para contratos do tipo CCEAR-Q são:
             <Mes mes="01" montanteMensal="100,00"></Mes>
             <Mes mes="02" montanteMensal="800,00"></Mes>
         </Ano>
-	</Contrato>
+    </Contrato>
 </ContratosCCEARQ>
 ```
 
@@ -413,10 +413,10 @@ As operações disponíveis para contratos do tipo CCEAR-Q são:
 
 ```xml
 <ContratosCCEARQ tipoGeracao="22">
-	<Contrato sequencialControle="1" numeroContrato="123456" dataDeInicioVigencia="01/01/2009 00">
+    <Contrato sequencialControle="1" numeroContrato="123456" dataDeInicioVigencia="01/01/2009 00">
         <Ano ano="2011"></Ano>
         <Ano ano="2012"></Ano>
-	</Contrato>
+    </Contrato>
 </ContratosCCEARQ>
 ```
 
@@ -488,12 +488,12 @@ A operação disponível para contrato do tipo Proinfa é:
 
 ```xml
 <ContratosProinfa tipoGeracao="10">
-	<Contrato sequencialControle="1" numeroContrato="123456" dataDeInicioVigencia="01/01/2011 00">
+    <Contrato sequencialControle="1" numeroContrato="123456" dataDeInicioVigencia="01/01/2011 00">
         <Ano ano="2011">
             <Mes mes="01" montanteMensal="100,00"></Mes>
             <Mes mes="02" montanteMensal="800,00"></Mes>
         </Ano>
-	</Contrato>
+    </Contrato>
 </ContratosProinfa>
 ```
 
@@ -512,14 +512,14 @@ As operações disponíveis para Redução Contratual de contratos do tipo CCEAR
 
 ```xml
 <ReducaoContratual tipoGeracao="1">
-	<Contrato sequencialControle="1" numeroContrato="123456">
-		 <FatorReducaoContratual tipoReducao="T" periodoDeInicioReducao="01/2018"
+    <Contrato sequencialControle="1" numeroContrato="123456">
+         <FatorReducaoContratual tipoReducao="T" periodoDeInicioReducao="01/2018"
             periodoDeFimReducao="01/2019" fatorReducao="0.123456789" />
-	</Contrato>
+    </Contrato>
     <Contrato sequencialControle="2" numeroContrato="654321">
-		 <FatorReducaoContratual tipoReducao="P" periodoDeInicioReducao="01/2020"
+         <FatorReducaoContratual tipoReducao="P" periodoDeInicioReducao="01/2020"
             fatorReducao="0.123456789" />
-	</Contrato>
+    </Contrato>
 </ReducaoContratual>
 ```
 
@@ -527,10 +527,10 @@ As operações disponíveis para Redução Contratual de contratos do tipo CCEAR
 
 ```xml
 <ReducaoContratual tipoGeracao="2">
-	<Contrato sequencialControle="1" numeroContrato="123456" periodoDeInicioRescisao="01/2020">
-	</Contrato>
-	<Contrato sequencialControle="2" numeroContrato="654321" periodoDeInicioRescisao="01/2022">
-	</Contrato>
+    <Contrato sequencialControle="1" numeroContrato="123456" periodoDeInicioRescisao="01/2020">
+    </Contrato>
+    <Contrato sequencialControle="2" numeroContrato="654321" periodoDeInicioRescisao="01/2022">
+    </Contrato>
 </ReducaoContratual>
 ```
 
@@ -538,12 +538,12 @@ As operações disponíveis para Redução Contratual de contratos do tipo CCEAR
 
 ```xml
 <ReducaoContratual tipoGeracao="3">
-	<Contrato sequencialControle="1" numeroContrato="123456">
-		<FatorReducaoContratual tipoValidacao="0" periodoDeInicioReducao="01/2020" />
-	</Contrato>
-	<Contrato sequencialControle="2" numeroContrato="654321">
-		<FatorReducaoContratual tipoValidacao="1"/>
-	</Contrato>
+    <Contrato sequencialControle="1" numeroContrato="123456">
+        <FatorReducaoContratual tipoValidacao="0" periodoDeInicioReducao="01/2020" />
+    </Contrato>
+    <Contrato sequencialControle="2" numeroContrato="654321">
+        <FatorReducaoContratual tipoValidacao="1"/>
+    </Contrato>
 </ReducaoContratual>
 ```
 
@@ -551,11 +551,11 @@ As operações disponíveis para Redução Contratual de contratos do tipo CCEAR
 
 ```xml
 <ReducaoContratual tipoGeracao="4">
-	<Contrato sequencialControle="1" numeroContrato="123456"> 
-		<FatorReducaoContratual tipoAcordo="0" periodoInicioReducaoRescisao="01/2020" />
-	</Contrato>
-	<Contrato sequencialControle="2" numeroContrato="654321"> 
-		<FatorReducaoContratual tipoAcordo="1"/>
-	</Contrato>
+    <Contrato sequencialControle="1" numeroContrato="123456"> 
+        <FatorReducaoContratual tipoAcordo="0" periodoInicioReducaoRescisao="01/2020" />
+    </Contrato>
+    <Contrato sequencialControle="2" numeroContrato="654321"> 
+        <FatorReducaoContratual tipoAcordo="1"/>
+    </Contrato>
 </ReducaoContratual>
 ```
