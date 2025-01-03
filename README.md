@@ -1,4 +1,4 @@
-# Arquivos de auxílio para comunicação com o Cliq CCEE
+# Auxílio para comunicação com o Cliq CCEE
 
 A especificação do protocolo de comunicação com o Cliq CCEE usado nesse repositório está disponível em 
 [Especificação do XSD_Modulo de Contratos](https://www.ccee.org.br/documents/80415/919484/Especifica%C3%A7%C3%A3o%20do%20XSD_Modulo%20de%20Contratos.doc/9a0ae890-b070-c6d6-32c9-3449af2f8b2f).
