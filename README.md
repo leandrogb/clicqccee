@@ -7,6 +7,10 @@ No momento da escrita desse documento, a versão do documento é a 5.0 de 28/06/
 
 Esse documento foi adaptado para o formato markdown para facilitar a leitura e a compreensão.
 
+## Isenção de responsabilidade
+
+Esse repositório NÃO é oficial de qualquer entidade pública ou privada! Use o conteúde dessas informações por sua conta e risco.
+
 ## Histórico de Versões
 
 | Versão | Data       | Descrição |
